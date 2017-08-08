@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Percentage Calculators</h1>
+        <br>
+        <p>Find a percentage or work out a percentage given numbers and percent values.</p>
+        <br>
+        <div class="calcBox">
+            <h3>Choose: </h3>
+
+            <select id = "menuSelect" onchange="calcSelect()">
+                <option value = "yIsWhat%OfX">Y is what percent of X?</option>
+                <option value = "whatIsP%OfX">What is P% of X?</option>
+                <option value = "yIsP%OfWhat?">Y is P% of what?</option>
+                <option value = "what%OfXIsY">What P% of X is Y?</option>
+                <option value = "p%OfWhatIsY">P% of what is Y?</option>
+                <option value = "p%OfXIsWhat">P% of X is what?</option>
+            </select>
+            <h6 id="calculationTemplate">Y is P% of X</h6>
+            <form id="calcForm">
+                <!-- Each form has the following template -->
+                <!-- Text Variable Text Variable Text -->
+                <!-- The following textFields allow for javascript to change the contents with innerText -->
+                <!-- For example "What is P% of X?" would have 'What is ' in textfield1, variable P, '% of ' in textfield2, variable x,
+                    and '?' in textfield3. -->
+                <!-- it is ok to leave textfield's blank if not needed.  -->
+                <div class="container">
+                    <div class="cell">
+                        <label for="textField1">What is </label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="variable1">
+                    </div>
+                    <div class="cell">
+                        <label for="textField2">% of </label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" for="variable2">
+                    </div>
+                    <div class="cell">
+                        <label id="textField3">?</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

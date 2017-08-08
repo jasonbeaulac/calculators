@@ -1,0 +1,19 @@
+div.calcBox {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: azure;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,.15),
+        0px 2px 3px 0px rgba(0,0,0,.1);
+}
+h6 {
+    color: darkgrey;
+}
+.container {
+    display:table;
+}
+.cell {
+    display:table-cell;
+    padding-right: 5px;
+}
