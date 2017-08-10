@@ -12,12 +12,12 @@
             <h3>Choose: </h3>
 
             <select id = "menuSelect" onchange="calcSelect()">
-                <option value = "yIsWhat%OfX">Y is what percent of X?</option>
-                <option value = "whatIsP%OfX">What is P% of X?</option>
+                <option value = "yIsWhat%OfX?">Y is what percent of X?</option>
+                <option value = "whatIsP%OfX?">What is P% of X?</option>
                 <option value = "yIsP%OfWhat?">Y is P% of what?</option>
-                <option value = "what%OfXIsY">What P% of X is Y?</option>
-                <option value = "p%OfWhatIsY">P% of what is Y?</option>
-                <option value = "p%OfXIsWhat">P% of X is what?</option>
+                <option value = "what%OfXIsY?">What P% of X is Y?</option>
+                <option value = "p%OfWhatIsY?">P% of what is Y?</option>
+                <option value = "p%OfXIsWhat?">P% of X is what?</option>
             </select>
             <h6 id="calculationTemplate">Y is P% of X</h6>
             <form id="calcForm">
@@ -29,22 +29,27 @@
                 <!-- it is ok to leave textfield's blank if not needed.  -->
                 <div class="container">
                     <div class="cell">
-                        <label for="textField1">What is </label>
+                        <div id="textField1"></div>
                     </div>
                     <div class="cell">
-                        <input type="text" id="variable1">
+                        <input type="text" id="variable1" value = "Y">
                     </div>
                     <div class="cell">
-                        <label for="textField2">% of </label>
+                        <div id="textField2"> is what % of </div>
                     </div>
                     <div class="cell">
-                        <input type="text" for="variable2">
+                        <input type="text" id="variable2" value = "X">
                     </div>
                     <div class="cell">
-                        <label id="textField3">?</label>
+                        <div id="textField3">?</div>
                     </div>
                 </div>
+                <div class="buttonContainer">
+                    <input type=submit value="Calculate" id = "calcButton">
+                </div>
             </form>
+            <h3 id="resultField">Result</h3>
         </div>
+        <script src="calc.js"></script>
     </body>
 </html>
